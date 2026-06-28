@@ -1608,6 +1608,81 @@ img { max-width: 100%; display: block; }
   }
 }
 
+/* --- Global Mobile Overrides --- */
+@media (max-width: 768px) {
+  /* Hero */
+  #hero {
+    padding-top: calc(var(--nav-height) + 20px);
+  }
+  .hero-eyebrow {
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+    line-height: 1.05;
+  }
+  .hero-title-outline {
+    -webkit-text-stroke: 1px var(--text-primary);
+  }
+  .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .hero-description {
+    background: rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  /* Projects */
+  .work-card {
+    width: 85vw;
+  }
+
+  /* Skills */
+  .accordion-header {
+    padding: 20px 0;
+  }
+  .accordion-title {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  }
+
+  /* Contact */
+  .contact-heading.massive-text {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+  .contact-email a {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+  }
+  .contact-pill-btn {
+    max-width: 100%;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .footer-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .footer-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
 /* --- Reveal Animations --- */
 .reveal-text {
   display: inline-block;
