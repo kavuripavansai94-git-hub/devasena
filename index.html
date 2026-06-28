@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devasena Reddy — Student Developer | Building Things That Matter</title>
+  <meta name="description"
+    content="Portfolio of Pallerla Devasena Reddy — a bold student developer from Guntur, AP. React, Python, Full-Stack. B.Tech 1st year at NxtWave." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Noise Texture Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+  </div>
+
+  <!-- Preloader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-top">
+        <span class="loader-name">Devasena Reddy</span>
+        <span class="loader-title">Portfolio &mdash; 2026</span>
+      </div>
+      <div class="loader-progress">
+        <div class="loader-bar"></div>
+      </div>
+      <div class="loader-bottom">
+        <span class="loader-percent">0</span>
+        <span class="loader-pct">%</span>
+      </div>
+    </div>
+    <div class="loader-reveal"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo magnetic-btn" data-cursor="text">
+        <span>devasena.</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link magnetic-btn" data-cursor="text"><span>// About</span></a>
+        <a href="#works" class="nav-link magnetic-btn" data-cursor="text"><span>// Projects</span></a>
+        <a href="#skills" class="nav-link magnetic-btn" data-cursor="text"><span>// Skills</span></a>
+        <a href="#contact" class="nav-link magnetic-btn" data-cursor="text"><span>// Contact</span></a>
+      </div>
+      <button class="nav-menu-btn magnetic-btn" id="menuBtn" data-cursor="text" aria-label="Toggle menu">
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a href="#about" class="mobile-menu-link"><span>// About</span></a>
+      <a href="#works" class="mobile-menu-link"><span>// Projects</span></a>
+      <a href="#skills" class="mobile-menu-link"><span>// Skills</span></a>
+      <a href="#contact" class="mobile-menu-link"><span>// Contact</span></a>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="#" data-cursor="text">// LinkedIn</a>
+      <a href="#" data-cursor="text">// Instagram</a>
+      <a href="#" data-cursor="text">// GitHub</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-canvas-wrap" id="heroCanvas"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow-text reveal-text">Student Developer &mdash; Guntur, AP, India</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-line"><span class="reveal-text">I Build</span></span>
+          <span class="hero-title-line"><span class="reveal-text">Things That</span></span>
+          <span class="hero-title-line"><span class="reveal-text hero-title-outline">Actually</span> <span
+              class="reveal-text hero-accent">Matter.</span></span>
+        </h1>
+        <div class="hero-bottom">
+          <p class="hero-description reveal-up">B.Tech 1st year student at NxtWave, passionate about full-stack
+            development. I turn ideas into real, working products.</p>
+          <div class="hero-scroll reveal-up">
+            <div class="scroll-indicator">
+              <div class="scroll-line"></div>
+            </div>
+            <span>Scroll to explore</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>React</span><span class="marquee-dot">✦</span>
+          <span>JavaScript</span><span class="marquee-dot">✦</span>
+          <span>Python</span><span class="marquee-dot">✦</span>
+          <span>MongoDB</span><span class="marquee-dot">✦</span>
+          <span>SQL</span><span class="marquee-dot">✦</span>
+          <span>Node.js</span><span class="marquee-dot">✦</span>
+          <span>C++</span><span class="marquee-dot">✦</span>
+          <span>HTML/CSS</span><span class="marquee-dot">✦</span>
+          <span>Full-Stack</span><span class="marquee-dot">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>React</span><span class="marquee-dot">✦</span>
+          <span>JavaScript</span><span class="marquee-dot">✦</span>
+          <span>Python</span><span class="marquee-dot">✦</span>
+          <span>MongoDB</span><span class="marquee-dot">✦</span>
+          <span>SQL</span><span class="marquee-dot">✦</span>
+          <span>Node.js</span><span class="marquee-dot">✦</span>
+          <span>C++</span><span class="marquee-dot">✦</span>
+          <span>HTML/CSS</span><span class="marquee-dot">✦</span>
+          <span>Full-Stack</span><span class="marquee-dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-left">
+            <div class="about-image-wrap reveal-up">
+              <div class="about-image" id="aboutImage">
+                <div class="about-image-placeholder">
+                  <span class="about-initials">DR</span>
+                </div>
+              </div>
+              <div class="about-image-caption">
+                <span class="mono">B.TECH &mdash; NXTWAVE</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-right">
+            <div class="section-label reveal-up">
+              <span class="mono">(01)</span>
+              <span>About</span>
+            </div>
+            <h2 class="about-heading">
+              <span class="reveal-text">I'm Devasena.</span>
+              <span class="reveal-text">A student who</span>
+              <span class="reveal-text">doesn't just <em>learn</em></span>
+              <span class="reveal-text">code — I <em class="highlight-text">ship<svg class="highlight-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20" preserveAspectRatio="none"><path d="M0,15 Q30,5 50,15 T100,10" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></em> it.</span>
+            </h2>
+            <div class="about-body reveal-up">
+              <p>I'm a 1st year B.Tech student at NxtWave (CCBP 4.0), based in Guntur, Andhra Pradesh. I believe the
+                best way to learn is by building — so that's exactly what I do.</p>
+              <p>From React frontends to Python backends, from MongoDB databases to responsive websites — I'm always
+                building something. Currently leveling up my full-stack skills and looking for exciting projects to
+                collaborate on.</p>
+            </div>
+            <div class="about-stats reveal-up">
+              <div class="stat">
+                <div class="stat-value"><span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span></div>
+                <span class="stat-label">Technologies Learned</span>
+              </div>
+              <div class="stat">
+                <div class="stat-value"><span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span></div>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat">
+                <div class="stat-value"><span class="stat-number" data-count="1">0</span><span class="stat-plus">st</span></div>
+                <span class="stat-label">Year B.Tech</span>
+              </div>
+              <div class="stat">
+                <div class="stat-value"><span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span></div>
+                <span class="stat-label">Commitment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Works / Projects -->
+    <section id="works">
+      <div class="works-glow works-glow-top"></div>
+      <div class="works-glow works-glow-bottom"></div>
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-label reveal-up">
+            <span class="mono">(02)</span>
+            <span>Projects</span>
+          </div>
+          <h2 class="section-heading">
+            <span class="reveal-text">Things I've</span>
+            <span class="reveal-text"><em>Built</em></span>
+          </h2>
+        </div>
+      </div>
+
+      <!-- Row 1: Scrolls RIGHT -->
+      <div class="works-marquee reveal-up">
+        <div class="works-track works-track-right">
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-nebula.png" alt="FlowBoard" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">01</span><span class="work-divider"></span><span class="work-year mono">2026</span></div>
+                <h3 class="work-title">FlowBoard</h3>
+                <p class="work-subtitle">React Analytics Dashboard</p>
+                <div class="work-tags"><span class="work-tag">React</span><span class="work-tag">Chart.js</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-solstice.png" alt="ShopStack" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">02</span><span class="work-divider"></span><span class="work-year mono">2026</span></div>
+                <h3 class="work-title">ShopStack</h3>
+                <p class="work-subtitle">Full-Stack E-commerce</p>
+                <div class="work-tags"><span class="work-tag">Node.js</span><span class="work-tag">MongoDB</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-vertex.png" alt="PyAutomate" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">03</span><span class="work-divider"></span><span class="work-year mono">2025</span></div>
+                <h3 class="work-title">PyAutomate</h3>
+                <p class="work-subtitle">Python Automation Suite</p>
+                <div class="work-tags"><span class="work-tag">Python</span><span class="work-tag">SQL</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-nebula.png" alt="FlowBoard" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">01</span><span class="work-divider"></span><span class="work-year mono">2026</span></div><h3 class="work-title">FlowBoard</h3><p class="work-subtitle">React Analytics Dashboard</p><div class="work-tags"><span class="work-tag">React</span><span class="work-tag">Chart.js</span></div></div></a></article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-solstice.png" alt="ShopStack" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">02</span><span class="work-divider"></span><span class="work-year mono">2026</span></div><h3 class="work-title">ShopStack</h3><p class="work-subtitle">Full-Stack E-commerce</p><div class="work-tags"><span class="work-tag">Node.js</span><span class="work-tag">MongoDB</span></div></div></a></article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-vertex.png" alt="PyAutomate" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">03</span><span class="work-divider"></span><span class="work-year mono">2025</span></div><h3 class="work-title">PyAutomate</h3><p class="work-subtitle">Python Automation Suite</p><div class="work-tags"><span class="work-tag">Python</span><span class="work-tag">SQL</span></div></div></a></article>
+        </div>
+      </div>
+
+      <!-- Row 2: Scrolls LEFT -->
+      <div class="works-marquee reveal-up">
+        <div class="works-track works-track-left">
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-echo.png" alt="VibeCast" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">04</span><span class="work-divider"></span><span class="work-year mono">2025</span></div>
+                <h3 class="work-title">VibeCast</h3>
+                <p class="work-subtitle">Music Discovery App</p>
+                <div class="work-tags"><span class="work-tag">React</span><span class="work-tag">API</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-nebula.png" alt="CodeVault" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">05</span><span class="work-divider"></span><span class="work-year mono">2025</span></div>
+                <h3 class="work-title">CodeVault</h3>
+                <p class="work-subtitle">Code Snippet Manager</p>
+                <div class="work-tags"><span class="work-tag">React</span><span class="work-tag">Firebase</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" data-cursor="view">
+            <a href="#" class="work-link">
+              <div class="work-card-image"><img src="assets/project-solstice.png" alt="TaskForge" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div>
+              <div class="work-card-info">
+                <div class="work-card-meta"><span class="mono work-number">06</span><span class="work-divider"></span><span class="work-year mono">2025</span></div>
+                <h3 class="work-title">TaskForge</h3>
+                <p class="work-subtitle">Project Management Tool</p>
+                <div class="work-tags"><span class="work-tag">Python</span><span class="work-tag">Django</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-echo.png" alt="VibeCast" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">04</span><span class="work-divider"></span><span class="work-year mono">2025</span></div><h3 class="work-title">VibeCast</h3><p class="work-subtitle">Music Discovery App</p><div class="work-tags"><span class="work-tag">React</span><span class="work-tag">API</span></div></div></a></article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-nebula.png" alt="CodeVault" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">05</span><span class="work-divider"></span><span class="work-year mono">2025</span></div><h3 class="work-title">CodeVault</h3><p class="work-subtitle">Code Snippet Manager</p><div class="work-tags"><span class="work-tag">React</span><span class="work-tag">Firebase</span></div></div></a></article>
+          <article class="work-card" aria-hidden="true"><a href="#" class="work-link"><div class="work-card-image"><img src="assets/project-solstice.png" alt="TaskForge" loading="lazy" /><div class="work-card-overlay"><span class="work-view">View &rarr;</span></div></div><div class="work-card-info"><div class="work-card-meta"><span class="mono work-number">06</span><span class="work-divider"></span><span class="work-year mono">2025</span></div><h3 class="work-title">TaskForge</h3><p class="work-subtitle">Project Management Tool</p><div class="work-tags"><span class="work-tag">Python</span><span class="work-tag">Django</span></div></div></a></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack / Skills Section -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-label reveal-up">
+            <span class="mono">(03)</span>
+            <span>Tech Stack</span>
+          </div>
+          <h2 class="section-heading">
+            <span class="reveal-text">My</span>
+            <span class="reveal-text"><em>Arsenal</em></span>
+          </h2>
+        </div>
+
+        <div class="services-list" id="skills-list">
+          <!-- Skill 1 -->
+          <div class="service-item reveal-up">
+            <div class="service-header">
+              <span class="service-number mono">01</span>
+              <h3 class="service-title">Frontend</h3>
+            </div>
+            <div class="service-body">
+              <p class="service-desc">Building responsive, interactive UIs that users actually enjoy using. Focusing on performance, accessibility, and pixel-perfect design.</p>
+            </div>
+            <div class="service-tags-wrapper">
+              <div class="service-tags-track">
+                <span class="service-pill">HTML</span>
+                <span class="service-pill">CSS</span>
+                <span class="service-pill">JavaScript</span>
+                <span class="service-pill">React</span>
+                <span class="service-pill" aria-hidden="true">HTML</span>
+                <span class="service-pill" aria-hidden="true">CSS</span>
+                <span class="service-pill" aria-hidden="true">JavaScript</span>
+                <span class="service-pill" aria-hidden="true">React</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="service-item reveal-up">
+            <div class="service-header">
+              <span class="service-number mono">02</span>
+              <h3 class="service-title">Backend</h3>
+            </div>
+            <div class="service-body">
+              <p class="service-desc">Server-side logic, scalable REST APIs, and authentication. Connecting the dots between the database and the user interface.</p>
+            </div>
+            <div class="service-tags-wrapper">
+              <div class="service-tags-track">
+                <span class="service-pill">Python</span>
+                <span class="service-pill">Node.js</span>
+                <span class="service-pill">Express</span>
+                <span class="service-pill" aria-hidden="true">Python</span>
+                <span class="service-pill" aria-hidden="true">Node.js</span>
+                <span class="service-pill" aria-hidden="true">Express</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="service-item reveal-up">
+            <div class="service-header">
+              <span class="service-number mono">03</span>
+              <h3 class="service-title">Databases</h3>
+            </div>
+            <div class="service-body">
+              <p class="service-desc">Relational and NoSQL database management. Handling data modeling, complex queries, and read/write optimization.</p>
+            </div>
+            <div class="service-tags-wrapper">
+              <div class="service-tags-track">
+                <span class="service-pill">SQL</span>
+                <span class="service-pill">MongoDB</span>
+                <span class="service-pill">SQLite</span>
+                <span class="service-pill" aria-hidden="true">SQL</span>
+                <span class="service-pill" aria-hidden="true">MongoDB</span>
+                <span class="service-pill" aria-hidden="true">SQLite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="service-item reveal-up">
+            <div class="service-header">
+              <span class="service-number mono">04</span>
+              <h3 class="service-title">Tools</h3>
+            </div>
+            <div class="service-body">
+              <p class="service-desc">Strong foundation in programming fundamentals, version control, and modern developer tooling.</p>
+            </div>
+            <div class="service-tags-wrapper">
+              <div class="service-tags-track">
+                <span class="service-pill">C</span>
+                <span class="service-pill">C++</span>
+                <span class="service-pill">Git</span>
+                <span class="service-pill">VS Code</span>
+                <span class="service-pill" aria-hidden="true">C</span>
+                <span class="service-pill" aria-hidden="true">C++</span>
+                <span class="service-pill" aria-hidden="true">Git</span>
+                <span class="service-pill" aria-hidden="true">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote / Mindset Strip -->
+    <div class="testimonial-section">
+      <div class="section-container">
+        <div class="testimonial-wrap">
+          <blockquote class="testimonial-quote scrub-text">
+            The best way to predict the future is to build it. I'm not waiting for opportunities — I'm coding them.
+          </blockquote>
+          <div class="testimonial-author reveal-up">
+            <span class="testimonial-name">Pallerla Devasena Reddy</span>
+            <span class="testimonial-role">Student Developer, NxtWave</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="contact-inner">
+          <div class="section-label reveal-up">
+            <span class="mono">(04)</span>
+            <span>Get in Touch</span>
+          </div>
+          
+          <div class="contact-grid">
+            <!-- Left Side: Massive Hook -->
+            <div class="contact-left reveal-up">
+              <h2 class="contact-heading massive-text">
+                HAVE<br>
+                AN IDEA?
+              </h2>
+            </div>
+            
+            <!-- Right Side: Details & CTA -->
+            <div class="contact-right reveal-up">
+              <p class="contact-desc">
+                I'm always open to discussing product design work or partnership opportunities. Let's build something world-class.
+              </p>
+              
+              <div class="contact-email">
+                <span class="mono">Drop a line</span>
+                <a href="mailto:hello@devasena.dev" data-cursor="text">hello@devasena.dev</a>
+              </div>
+              
+              <a href="mailto:hello@devasena.dev" class="contact-pill-btn magnetic-btn" data-cursor="view">
+                <span class="btn-text">Let's Connect</span>
+                <span class="btn-icon">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="section-container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">devasena.</span>
+          <span class="footer-copy">&copy; 2026 Pallerla Devasena Reddy. All rights reserved.</span>
+        </div>
+        <div class="footer-right">
+          <div class="footer-socials">
+            <a href="#" class="footer-social magnetic-btn" data-cursor="text"><span>// LinkedIn</span></a>
+            <a href="#" class="footer-social magnetic-btn" data-cursor="text"><span>// Instagram</span></a>
+            <a href="#" class="footer-social magnetic-btn" data-cursor="text"><span>// GitHub</span></a>
+          </div>
+          <span class="footer-location mono">16.3067° N, 80.4365° E</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
