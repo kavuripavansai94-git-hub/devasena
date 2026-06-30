@@ -374,7 +374,7 @@ class HeroBlob {
     // Position blob to the right and center it vertically
     const isMobile = window.innerWidth < 768;
     this.mesh.position.x = 1.5; // Fixed at 1.5 for both desktop and mobile
-    this.mesh.position.y = isMobile ? -0.1 : -0.25; // Moved down on mobile
+    this.mesh.position.y = isMobile ? -0.2 : -0.25; // Moved down on mobile
 
     // Mouse tracking
     if (!isTouchDevice()) {
