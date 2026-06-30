@@ -249,7 +249,7 @@ class HeroBlob {
 
     // Camera
     this.camera = new THREE.PerspectiveCamera(45, this.container.clientWidth / this.container.clientHeight, 0.1, 100);
-    this.camera.position.z = isTouchDevice() ? 5.5 : 4.5;
+    this.camera.position.z = window.innerWidth < 768 ? 5.5 : 4.5;
 
     // Geometry
     const detail = isTouchDevice() ? 40 : 64;
@@ -371,8 +371,9 @@ class HeroBlob {
     this.scene.add(this.mesh);
 
     // Position blob to the right and center it vertically
-    this.mesh.position.x = isTouchDevice() ? 0 : 1.5;
-    this.mesh.position.y = isTouchDevice() ? 0 : -0.25;
+    const isMobile = window.innerWidth < 768;
+    this.mesh.position.x = isMobile ? 0 : 1.5;
+    this.mesh.position.y = isMobile ? 0 : -0.25;
 
     // Mouse tracking
     if (!isTouchDevice()) {
@@ -393,6 +394,13 @@ class HeroBlob {
     this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
+    
+    const isMobile = window.innerWidth < 768;
+    if (this.camera) this.camera.position.z = isMobile ? 5.5 : 4.5;
+    if (this.mesh) {
+      this.mesh.position.x = isMobile ? 0 : 1.5;
+      this.mesh.position.y = isMobile ? 0 : -0.25;
+    }
   }
 
   animate() {

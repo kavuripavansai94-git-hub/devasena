@@ -1383,6 +1383,7 @@ img { max-width: 100%; display: block; }
   background-size: 200% 100%;
   background-position: 100% 0;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent; /* Fallback */
 }
