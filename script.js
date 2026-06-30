@@ -372,7 +372,7 @@ class HeroBlob {
 
     // Position blob to the right and center it vertically
     const isMobile = window.innerWidth < 768;
-    this.mesh.position.x = isMobile ? 0 : 1.5;
+    this.mesh.position.x = isMobile ? 1.0 : 1.5;
     this.mesh.position.y = isMobile ? 0 : -0.25;
 
     // Mouse tracking
@@ -398,7 +398,7 @@ class HeroBlob {
     const isMobile = window.innerWidth < 768;
     if (this.camera) this.camera.position.z = isMobile ? 5.5 : 4.5;
     if (this.mesh) {
-      this.mesh.position.x = isMobile ? 0 : 1.5;
+      this.mesh.position.x = isMobile ? 1.0 : 1.5;
       this.mesh.position.y = isMobile ? 0 : -0.25;
     }
   }

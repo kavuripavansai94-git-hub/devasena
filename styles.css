@@ -1261,6 +1261,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   z-index: 1;
   padding-left: calc(32px + 1rem); /* Align with title */
+  will-change: grid-template-rows;
 }
 
 .service-item:hover .service-body {
@@ -1279,6 +1280,7 @@ img { max-width: 100%; display: block; }
   transform: translateY(10px);
   transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s, padding-top 0.4s ease;
   max-width: 600px;
+  will-change: opacity, transform, padding-top;
 }
 
 .service-item:hover .service-desc {
@@ -1653,7 +1655,7 @@ img { max-width: 100%; display: block; }
 
   /* Projects */
   .work-card {
-    width: 85vw;
+    width: 75vw;
   }
 
   /* Skills */
