@@ -1255,17 +1255,17 @@ img { max-width: 100%; display: block; }
 
 /* Accordion Body */
 .service-body {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+  max-height: 0;
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   z-index: 1;
   padding-left: calc(32px + 1rem); /* Align with title */
-  will-change: grid-template-rows;
+  will-change: max-height;
 }
 
 .service-item:hover .service-body {
-  grid-template-rows: 1fr;
+  max-height: 300px;
 }
 
 .service-desc {
@@ -1655,7 +1655,7 @@ img { max-width: 100%; display: block; }
 
   /* Projects */
   .work-card {
-    width: 75vw;
+    width: 65vw;
   }
 
   /* Skills */
