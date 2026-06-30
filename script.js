@@ -190,7 +190,7 @@ class HoverGlow {
         const rect = item.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         // Update CSS variables for the radial gradient center
         item.style.setProperty('--mouse-x', `${x}px`);
         item.style.setProperty('--mouse-y', `${y}px`);
@@ -207,7 +207,7 @@ class ScrubText {
 
   init() {
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-    
+
     this.elements.forEach(el => {
       gsap.to(el, {
         backgroundPositionX: '0%',
@@ -374,7 +374,7 @@ class HeroBlob {
     // Position blob to the right and center it vertically
     const isMobile = window.innerWidth < 768;
     this.mesh.position.x = 1.5; // Fixed at 1.5 for both desktop and mobile
-    this.mesh.position.y = isMobile ? -0.75 : -0.25; // Moved down on mobile
+    this.mesh.position.y = isMobile ? -0.5 : -0.25; // Moved down on mobile
 
     // Mouse tracking
     if (!isTouchDevice()) {
@@ -395,7 +395,7 @@ class HeroBlob {
     this.camera.aspect = this.container.clientWidth / this.container.clientHeight;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(this.container.clientWidth, this.container.clientHeight);
-    
+
     const isMobile = window.innerWidth < 768;
     if (this.camera) this.camera.position.z = isMobile ? 5.5 : 4.5;
     if (this.mesh) {
@@ -409,7 +409,7 @@ class HeroBlob {
 
     const elapsed = this.clock.getElapsedTime();
     this.material.uniforms.uTime.value = elapsed;
-    
+
     // Pass mouse to shader for reactivity
     if (this.material.uniforms.uMouse) {
       this.material.uniforms.uMouse.value.x = lerp(this.material.uniforms.uMouse.value.x, this.mouse.x, 0.05);
@@ -482,16 +482,16 @@ class Preloader {
       duration: 0.5,
       ease: 'power2.in',
     })
-    .to('.loader-reveal', {
-      scaleY: 1,
-      duration: 0.6,
-      ease: 'power3.inOut',
-    }, '-=0.1')
-    .to('#loader', {
-      yPercent: -100,
-      duration: 0.8,
-      ease: 'power3.inOut',
-    }, '-=0.1');
+      .to('.loader-reveal', {
+        scaleY: 1,
+        duration: 0.6,
+        ease: 'power3.inOut',
+      }, '-=0.1')
+      .to('#loader', {
+        yPercent: -100,
+        duration: 0.8,
+        ease: 'power3.inOut',
+      }, '-=0.1');
   }
 }
 
@@ -641,7 +641,7 @@ class Animations {
             { y: 50, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out', delay: 0.1 }
           );
-          
+
           // Trigger SVG draw if element contains a highlight
           const svg = el.querySelector('.highlight-svg');
           if (svg) svg.classList.add('drawn');
@@ -702,7 +702,7 @@ class Animations {
         const y = e.clientY - rect.top;
         const xPct = (x / rect.width - 0.5) * 2;
         const yPct = (y / rect.height - 0.5) * 2;
-        
+
         gsap.to(img, {
           rotateX: yPct * -10,
           rotateY: xPct * 10,
@@ -724,7 +724,7 @@ class Animations {
   counterAnimation() {
     $$('.stat-number').forEach(num => {
       const target = parseInt(num.dataset.count);
-      
+
       ScrollTrigger.create({
         trigger: num,
         start: 'top 85%',
@@ -733,9 +733,9 @@ class Animations {
           let iteration = 0;
           const chars = "0123456789";
           const finalStr = target.toString();
-          
+
           gsap.fromTo(num, { scale: 0.8 }, { scale: 1, duration: 0.5, ease: 'back.out(1.5)' });
-          
+
           const interval = setInterval(() => {
             num.textContent = finalStr.split("").map((letter, index) => {
               if (index < iteration) {
@@ -743,11 +743,11 @@ class Animations {
               }
               return chars[Math.floor(Math.random() * chars.length)];
             }).join("");
-            
+
             if (iteration >= finalStr.length) {
               clearInterval(interval);
             }
-            iteration += 1 / 3; 
+            iteration += 1 / 3;
           }, 30);
         }
       });
